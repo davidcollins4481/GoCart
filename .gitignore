@@ -4,6 +4,7 @@ database.php
 config.php
 gocart.php
 *.bak
+logs/*
 
 # OS generated files #
 ######################
