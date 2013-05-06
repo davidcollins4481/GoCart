@@ -1,5 +1,21 @@
 <?php
 
+/*
+|---------------------------------------------------------------
+| DEFAULT TIMEZONE
+|---------------------------------------------------------------
+|
+| Set the default timezone for date/time functions to use if
+| none is set on the server.
+|
+*/
+
+if( ! ini_get('date.timezone') )
+{
+   date_default_timezone_set('GMT');
+}
+
+
 //if the gocart config file doesn't exist, the cart hasn't been installed.
 if(!file_exists(dirname($_SERVER['SCRIPT_FILENAME']).'/gocart/config/gocart.php'))
 {
